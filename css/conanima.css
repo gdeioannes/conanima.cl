@@ -62,8 +62,6 @@
 
 .logo-landing {
     width: 400px;
-    padding-top: 100px;
-    padding-bottom: 30px;
 }
 
 .add-icon {}
@@ -212,13 +210,34 @@
     opacity: 80%;
 }
 
+.conanima-photo-prod {
+
+    margin-bottom: 30px;
+}
+
+.conanima-photo-prod img {
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.conamima-main-image {
+    margin-top: 30px !important;
+}
+
 @media (max-width: 768px) {
 
     .logo-landing {
         width: 50%;
-        padding-top: 50px;
-        padding-bottom: 0px;
     }
+
+    #myVideo {
+        height: 100%;
+        width: auto;
+        opacity: 80%;
+    }
+
     .frame-img {
         background-image: none;
     }
@@ -234,5 +253,8 @@
     }
     .footer-Content {
         text-align: center;
+    }
+    .contact-footer {
+        text-align: left;
     }
 }
