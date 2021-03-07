@@ -8,8 +8,8 @@
     <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Grayrids">
-    <title>Essence - Bootstrap 4 Template</title>
-
+    <title>Conanima</title>
+    <link rel="shortcut icon" href="imgs/conanima-tab-icon.png" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/line-icons.css">
@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/conanima.css">
-
 </head>
 
 <body>
@@ -43,14 +42,14 @@
                         <li class="nav-item">
                             <a class="nav-link page-scroll" href="#portfolios">PORTAFOLIO</a>
                         </li>
-                        <li class="nav-item">
+                        <!--<li class="nav-item">
                             <a class="nav-link page-scroll" href="#services">SERVICIOS</a>
-                        </li>
+                        </li>-->
                         <li class="nav-item">
                             <a class="nav-link page-scroll" href="#about-us">NOSOTROS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link page-scroll" href="#pricing">CONTACTO</a>
+                            <a class="nav-link page-scroll" href="#google-map-area">CONTACTO</a>
                         </li>
                     </ul>
                 </div>
@@ -63,11 +62,15 @@
             <div id="carousel-slider" class="carousel slide carousel-fade" data-ride="carousel">
 
                 <div class="carousel-inner" role="listbox">
+                    <video autoplay muted loop id="myVideo">
+  <source src="Video/reel-cut.mov" type="video/mp4">
+</video>
                     <div class="gradient-img"></div>
                     <div class="frame-img"></div>
                     <div class="wow fadeInDown" data-wow-delay="0.2s">
                         <img class="logo-landing" src="imgs/Conanima_Logo_Index.png">
                     </div>
+                    <br>
                     <div class="wow fadeInDown" data-wow-delay="0.4s">
                         <p class="header-landing-text">{ pasión por el encuadre }</p>
                     </div>
@@ -163,9 +166,9 @@
                 </div>
             </div>
             <div class="col-lg-12 conanima-center">
-                <a class="filter btn btn-common btn-effect conanima-btn">
+                <!--<a class="filter btn btn-common btn-effect conanima-btn">
                     { Explora nuestro Portafolio } 
-                </a>
+                </a>-->
             </div>
         </div>
         <!-- Container Ends -->
@@ -175,30 +178,41 @@
     <!-- Clients Section -->
     <div id="clients" class="section clients">
         <!-- Container Ends -->
-        <div class="container ">
+        <div class="container-fluid ">
             <div class="section-header">
                 <h2 class="section-title">{ CLIENTES }</h2>
-                <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos debitis.</p>
+                <p class="section-subtitle-client">Algunos de nuestros clientes .</p>
             </div>
             <!-- Row and Scroller Wrapper Starts -->
             <div class="row">
                 <div class="col-md-3 conanima-client">
-                    <img src="imgs/Conanima_Logo_Company_Place_Holder.png" alt="">
+                    <img src="imgs/clients/Ama.png" alt="">
                 </div>
                 <div class="col-md-3 conanima-client">
-                    <img src="imgs/Conanima_Logo_Company_Place_Holder.png" alt="">
+                    <img src="imgs/clients/Biosonda.png" alt="">
                 </div>
                 <div class="col-md-3 conanima-client">
-                    <img src="imgs/Conanima_Logo_Company_Place_Holder.png" alt="">
+                    <img src="imgs/clients/Firmpro.png" alt="">
                 </div>
                 <div class="col-md-3 conanima-client">
-                    <img src="imgs/Conanima_Logo_Company_Place_Holder.png" alt="">
+                    <img src="imgs/clients/Fucited.png" alt="">
                 </div>
             </div>
-            <div class="section-paragraph">
-                <h2 class="section-title">{ Texto sobre clientes }</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</p>
+            <div class="row">
+                <div class="col-md-3 conanima-client">
+                    <img src="imgs/clients/Inclub.png" alt="">
+                </div>
+                <div class="col-md-3 conanima-client">
+                    <img src="imgs/clients/Mutual.png" alt="">
+                </div>
+                <div class="col-md-3 conanima-client">
+                    <img src="imgs/clients/Tammy.png" alt="">
+                </div>
+                <div class="col-md-3 conanima-client">
+                    <img src="imgs/clients/Utal.png" alt="">
+                </div>
             </div>
+
         </div>
     </div>
     <!-- Client Section End -->
@@ -206,24 +220,28 @@
     <!-- Clients Section -->
     <div id="about-us" class="section about-us">
         <!-- Container Ends -->
-        <div class="container ">
+        <div class="container-fluid ">
             <div class="section-header">
-                <h2 class="section-title">{ SOBRE NOSOTROS }</h2>
+                <h2 class="section-title conanima-white-text">{ SOBRE NOSOTROS }</h2>
             </div>
             <!-- Row and Scroller Wrapper Starts -->
             <div class="row">
                 <div class="col-lg-6">
                 </div>
                 <div class="col-lg-6">
-                    <div class="section-paragraph">
-                        <p>-Conanima es una productora audiovisual, especializada en contar historias con pasion. Desde videos corporativos hasta largometrajes nos especializamos en encontrar eso que hace unico a tu historia.
-                            <br> Hemos desarrollado, distintos documentales, comerciales, videos corporativos y cortometrajes para mejor servir a nuestro cliente
+                    <div class="section-paragraph conanima-about-us">
+                        <p class="conanima-white-text">Conanima SpA es una productora audiovisual fundada en el año 2016, para la creación de contenido audiovisual con énfasis en la historia visual y la inclusión de distintas áreas y regiones de Chile. Con oficinas en Santiago y La Serena abarcamos una gran cantidad de terreno que nos permite explorar la belleza del país. Nos enfocamos en la calidad, y en potenciar a nuestros clientes.
+                            <br>
+                            <br>
+                            <span class="conanima-highlight-text">Que nos hace diferentes</span>
+                            <br>
+                            <br> En Conanima sabemos qué hace el contenido audiovisual especial y cautivante, ya sea un pequeña cápsula informativa, un cortometraje, un documental, un comercial o un video corporativo, nuestro equipo siempre se encargará de que el contenido requerido sea de lo mejor.
 
                         </p>
                     </div>
-                    <a class="filter btn btn-common btn-effect conanima-btn">
+                    <!--<a class="filter btn btn-common btn-effect conanima-btn">
                         { Explora nuestro Portafolio } 
-                    </a>
+                    </a>-->
                 </div>
             </div>
         </div>
@@ -233,10 +251,35 @@
     <!-- Map Section Start -->
     <section id="google-map-area">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 padding-0">
-                    <object style="border:0; height: 450px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34015.943594576835!2d-106.43242624069771!3d31.677719472407432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75d90e99d597b%3A0x6cd3eb9a9fcd23f1!2sCourtyard+by+Marriott+Ciudad+Juarez!5e0!3m2!1sen!2sbd!4v1533791187584"></object>
+            <div class="row conanima-contact-container">
+                <div class="col-lg-12" style="margin-bottom: 40px;"></div>
+                <div class="col-lg-6"></div>
+                <div class="col-lg-5">
+                    <div class="conanima-contact">
+                        <div class="section-header">
+                            <h2 class="section-title">{ Contactanos }</h2>
+                        </div>
+                        <ul class="contact-footer">
+                            <li>
+                                <strong>Dirección :</strong> <span>Sucursal Serena: <br>Los lucumos poniente #0660, edificio #2 Oficina 904</span>
+                                <br>
+                                <span>Sucursal Santiago:<br> La capitana #80 Oficina #108, Las condes</span>
+                            </li>
+                            <li>
+                                <strong>Telefono :</strong> <span>+569 64966454</span>
+                            </li>
+                            <li>
+                                <strong>E-mail :</strong> <span><a href="#"> ignacioreveco@gmail.com</a></span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-12" style="margin-bottom: 40px;"></div>
+                <div class="col-12 padding-0 conanima-map">
+                    <object style="border:0; height: 450px; width: 110%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212998.49433514118!2d-70.7702596040913!3d-33.4727087769088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C+Regi%C3%B3n+Metropolitana%2C+Chile!5e0!3m2!1ses-419!2sde!4v1564062226937!5m2!1ses-419!2sde"></object>
+                </div>
+
             </div>
         </div>
     </section>
@@ -251,39 +294,41 @@
                     <div class="col-lg-5 col-md-6 col-sm-6 col-xs-6 col-mb-12">
                         <h3><img src="imgs/Conanima_Logo_Footer.png"></h3>
                         <div class="textwidget">
-                            <p>If you think you have the passion, attitude and capability to join us the next big software company s so that we can get the convers.</p>
+                            <p>Pasión por el encuadre - Productora audivisual.</p>
                         </div>
                         <ul class="footer-social">
-                            <li><a class="facebook" href="#"><i class="lni-facebook-filled"></i></a></li>
-                            <li><a class="twitter" href="#"><i class="lni-twitter-filled"></i></a></li>
-                            <li><a class="linkedin" href="#"><i class="lni-linkedin-fill"></i></a></li>
-                            <li><a class="google-plus" href="#"><i class="lni-google-plus"></i></a></li>
+                            <!--
+                        <li><a class="facebook" href="#"><i class="lni-facebook-filled"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="lni-twitter-filled"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="lni-linkedin-fill"></i></a></li>
+                        <li><a class="google-plus" href="#"><i class="lni-google-plus"></i></a></li>-->
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
                         <div class="widget">
-                            <h3 class="block-title">Short Link</h3>
+                            <h3 class="block-title">Mapa-Sitio</h3>
                             <ul class="menu">
-                                <li><a href="#">Service</a></li>
-                                <li><a href="#">Wishlist</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Advance Sarch</a></li>
-                                <li><a href="#">Site Map</a></li>
+                                <li><a href="#slider-area">Home</a></li>
+                                <li><a href="#portfolios">Portafolio</a></li>
+                                <li><a href="#about-us">Nosotros</a></li>
+                                <li><a href="#google-map-area">Contacto</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 col-mb-12">
                         <div class="widget">
-                            <h3 class="block-title">Contact Us</h3>
+                            <h3 class="block-title">Contactanos:</h3>
                             <ul class="contact-footer">
                                 <li>
-                                    <strong>Address :</strong> <span>1900 Pico Blvd, New York br Centernial, colorado</span>
+                                    <strong>Dirección :</strong> <span>Sucursal Serena: <br>Los lucumos poniente #0660, edificio #2 Oficina 904</span>
+                                    <br>
+                                    <span>Sucursal Santiago:<br> La capitana #80 Oficina #108, Las condes</span>
                                 </li>
                                 <li>
-                                    <strong>Phone :</strong> <span>+48 123 456 789</span>
+                                    <strong>Telefono :</strong> <span>+569 64966454</span>
                                 </li>
                                 <li>
-                                    <strong>E-mail :</strong> <span><a href="#">info@example.com</a></span>
+                                    <strong>E-mail :</strong> <span><a href="#">ignacioreveco@gmail.com</a></span>
                                 </li>
                             </ul>
                         </div>

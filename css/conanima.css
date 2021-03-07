@@ -1,6 +1,7 @@
 .navbar-brand img {
     height: 50px !important;
     max-width: 220px !important;
+    margin-bottom: 10px;
 }
 
 .blue-line {
@@ -11,11 +12,11 @@
 
 .blue-line-nav {
     position: absolute;
+    bottom: 0px;
     background: rgb(0, 172, 242);
     background: linear-gradient(90deg, rgba(0, 172, 242, 1) 45%, rgba(102, 45, 145, 1) 100%);
     height: 5px;
     width: 100%;
-    margin-top: 32px;
 }
 
 .navbar {
@@ -48,12 +49,11 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-
     background-image: url(../imgs/Conanima_Image_Frame.png);
 }
 
 .carousel-inner {
-    height: 600px;
+    width: 100%;
     background-size: cover;
     background-image: url(../imgs/Conanima_Image_Landing_Front.jpg);
     margin-top: 65px;
@@ -62,7 +62,8 @@
 
 .logo-landing {
     width: 400px;
-    padding-top: 130px;
+    padding-top: 100px;
+    padding-bottom: 30px;
 }
 
 .add-icon {}
@@ -72,7 +73,7 @@
     font-weight: 900;
     padding: 20px;
     font-size: 40px;
-    color: #FFF
+    color: #FFF;
 }
 
 .conanima-portfolio {
@@ -80,10 +81,6 @@
     background-size: contain;
 }
 
-.conanima-about-us {
-    background-image: url(../imgs/Conanima_Image_Page_3.jpg);
-    background-size: contain;
-}
 
 .conanima-center {
     padding: 30px;
@@ -142,8 +139,14 @@
     height: 100%;
 }
 
+.section-subtitle-client {
+    color: white;
+    margin-bottom: 10px;
+}
+
 .conanima-client img {
-    width: 100%;
+    width: 75%;
+    margin-bottom: 20px;
 }
 
 .clients {
@@ -159,4 +162,77 @@
 .about-us {
     background-image: url(../imgs/Conanima_Image_Page_3.jpg) !important;
     background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.conanima-about-us {
+    padding: 20px;
+}
+
+.conanima-about-us p {
+    background: none !important;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.conanima-white-text {
+    color: #FFF !important;
+}
+
+.conanima-highlight-text {
+    text-align: center;
+    font-weight: 100;
+    font-size: 25px;
+    font-style: italic;
+    color: rgb(0, 172, 242) !important;
+}
+
+.conanima-map {
+    position: absolute;
+    z-index: -1;
+}
+
+.conanima-contact-container {
+    box-sizing: border-box;
+}
+
+.conanima-contact {
+    padding: 20px;
+    background: #FFF;
+
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 80%;
+}
+
+@media (max-width: 768px) {
+
+    .logo-landing {
+        width: 50%;
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
+    .frame-img {
+        background-image: none;
+    }
+    .header-landing-text {
+        font-size: 30px;
+    }
+    .conanima-client img {
+        width: 55%;
+        margin-bottom: 20px;
+    }
+    .section-title {
+        font-size: 30px;
+    }
+    .footer-Content {
+        text-align: center;
+    }
 }
