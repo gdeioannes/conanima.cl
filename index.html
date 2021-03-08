@@ -30,7 +30,7 @@
     <header id="slider-area">
         <nav class="navbar navbar-expand-md fixed-top scrolling-navbar bg-white">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><!--<span class="lni-bulb"></span>--><img src="imgs/Conanima_Logo_Header.png"></a>
+                <a class="navbar-brand" href="index.html"><!--<span class="lni-bulb"></span>--><img id="header-logo" src="imgs/Conanima_Logo_Header.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <i class="lni-menu"></i>
           </button>
@@ -408,6 +408,28 @@
             }
         });
 
+
+        $(document).ready(function() {
+            //hides them logo when the page loads
+            $("#header-logo").hide();
+        });
+
+        $(document).scroll(function() {
+            var y = $(document).scrollTop(),
+                image = $("#header-logo"),
+                header = $("#slider-area");
+
+
+            if (y >= 100) {
+                //show the image and make the header fixed
+                header.addClass('fixed');
+                image.fadeIn();
+            } else {
+                //put the header in original position and hide image
+                header.removeClass('fixed');
+                image.fadeOut();
+            }
+        });
     </script>
 
 </body>
