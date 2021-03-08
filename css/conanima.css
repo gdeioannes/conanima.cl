@@ -231,6 +231,11 @@
 }
 
 @media (max-width: 768px) {
+    .navbar-brand img {
+        height: 30px !important;
+        max-width: 220px !important;
+        margin-bottom: 5px;
+    }
 
     .logo-landing {
         width: 50%;
